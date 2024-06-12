@@ -44,7 +44,7 @@ Say we have an input file sample_input_02.txt with the following content:
 100
 
 Run the program:
-python(3) -u UniqueInt.py sample_input_02.txt
+python(3) -u DuplicateInt.py sample_input_02.txt
 
 The program will create an output file named sample_input_02.txt_results.txt containing the unique integers:
 
@@ -52,7 +52,7 @@ The program will create an output file named sample_input_02.txt_results.txt con
 500
 
 ## Output
-The program will generate an output file named <input_file-name>_results.txt. This file will contain all the unique integers from the input file, each on a new line, arranged in increasing order.
+The program will generate an output file named <input_file-name>_results.txt. This file will contain all the duplicate integers from the input file, each on a new line, arranged in increasing order.
 
 ## Handling Different Input Scenarios
 ### Whitespace Handling:
