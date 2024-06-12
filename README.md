@@ -1,44 +1,69 @@
-Task Description: Using any programming language you choose, Write a program that reads a list of integers from an input file. Generate an output file with a list of duplicate integers present in the input file.
+# Duplicate Integer Finder
+## Programming Assignment : Mid-term Quiz
+### Task Description:
+Using any programming language you choose, Write a program that reads a list of integers from an input file. Generate an output file with a list of duplicate integers present in the input file.
 
-Instructions
-Download sample data for this assignment from this location Download location.
-Read a file that has one integer on each line. The integer can be positive or negative.
-5
+## Features
+Reads integers from an input file
+Identifies duplicate integers
+Writes duplicate integers to an output file in increasing order
+Handles whitespace and invalid input gracefully
 
-14
+## Requirements
+Python compiler (interpreter): depending on your machine specifications python or python3 is required for this program.
+Use python --version to check the version of python on your machine.
 
-5
+## How to Use
 
--9
+## Installation
 
-62
+You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
 
--1
+```
+git clone https://github.com/mnelson-1/Quiz_q1.git
+```
 
--9
+To compile and run the program run the following command in your terminal:
+python(3) -u <program_file-name> <input_file-name>
+The python interpreter you use is dependent on the version installed on your machine; for me this will look like this:
+python3 -u [DuplicateInt.py] [sample_04.txt]
 
--9
+Pls note that square brackets won't be used when actually running the program, this has been included for emphatic basis.
 
-For each input file in the sample data, you need to output a result file that contains a list of the Duplicate integers in this file. For example, in the sample data above, your result should be in the sample_results.txt file
-The integers in the result file must be sorted in increasing order.
-There must be one line in the result file for each Duplicate integer
-For example, if the input is as shown in the bullet point above, the result must be:
--9
+*<input_file-name> - file containing integers*
 
-5
+## Example
 
-A few sample input and result files are given in the Sample data file for test purposes, and the files are in the link above.
+Say we have an input file sample_input_02.txt with the following content:
 
-Your code must also handle the following variations in the input file:
+1023
+-1023
+500
+500
+-1023
+100
 
-Integers in each line can have a white space before or after. A whitespace is limited to one or more tabs and space characters.
-If there are any lines with no inputs or white spaces, those lines must be See example input files.
-If there are any lines with two integers separated by white space, those lines must be skipped.
-If any lines contain a non-integer input, those lines must be seen as an example input file.
-Non-integer input includes alphabets, punctuation marks, non-numeric values, and floating point numbers.
-Note:
-The integers in the input file will range from -1023 to 1023.
-You are not allowed to use built-in Libraries to implement this work; you are expected to implement your custom function to tackle the problem.
-Feel free to implement your code locally before putting the final implementation in the textbox below. Ensure that your code runs appropriately before submitting; if your code fails to run correctly, you stand to lose points for correctness.
+Run the program:
+python(3) -u UniqueInt.py sample_input_02.txt
 
-Happy Coding!!!
+The program will create an output file named sample_input_02.txt_results.txt containing the unique integers:
+
+-1023
+500
+
+## Output
+The program will generate an output file named <input_file-name>_results.txt. This file will contain all the unique integers from the input file, each on a new line, arranged in increasing order.
+
+## Handling Different Input Scenarios
+### Whitespace Handling:
+Lines with only whitespace characters are skipped
+Leading and trailing whitespaces around integers are ignored.
+## Invalid Lines:
+Lines containing non-integer values (alphabets, punctuation, floating-point numbers, etc.) are skipped.
+Lines with integers out of the range [-1023, 1023] are skipped.
+### Empty Lines:
+Lines that are completely empty or contain only whitespace are skipped.
+
+
+# Author
+Nelson Somtochukwu <m.nelson@alustudent.com>
